@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задания JS</title>
+    <style>
+        a:hover {background-color: yellow;}
+        a.active {background-color: red;} 
+        .menu {background-color:bisque; border: 2px solid grey;}
+    </style>
+</head>
+<body>
+
+  <h1> Меню </h1>
+     <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="contacts.html">Контакты и Формы</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="dom.html">Данные</a>
+        <a href="tasks.html" class="active">Задача</a>
+        <a href="index.html#contacts-anchor">Якорь на контакты</a>
+        <a href="https://www.hse.ru" target="_blank">Внешний сайт</a>
+        <a href="https://www.hse.ru" target="_blank"><img src="https://www.hse.ru/f/src/home/community.png" height="20px" alt="Лого"></a>
+</div>
+
+    <p name="formulation">Определить, поместится ли прямоугольник со сторонами a, b внутри прямоугольника со сторонами c, d.</p>
+    
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <ul>
+            <li>Для поисковика: <input name="q" value="search"></li>
+            <li>Формулировка задачи:
+                <br><textarea cols="60" rows="4" id="task" name="formulation">Даны положительные числа a, b, c, d. Выясните, может ли прямоугольник a,b уместиться внутри c,d.</textarea>
+            </li>
+            
+            <li>a: <input id="a" name="a" type="number" step="any" value="2"></li>
+            <li>b: <input id="b" name="b" type="number" step="any" value="3"></li>
+            <li>c: <input id="c" name="c" type="number" step="any" value="4"></li>
+            <li>d: <input id="d" name="d" type="number" step="any" value="5"></li>
+            
+            <li>Результат решения задачи: <input id="result" name="result" value="не определен" size="60"></li>
+            
+        
+            <li>Действие 1: <input id="verify" type="button" value="Проверить"></li>
+            <li>Действие 2: <input id="send" type="button" value="Отправить"></li>
+        </ul>
+    </form>
+
+    <script src="js/solution.js"></script>
+
+</body>
+</html>

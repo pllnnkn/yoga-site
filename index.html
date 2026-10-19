@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Горячая йога в СПб</title>
+    <style>
+        a:hover {background-color: yellow;}
+        a.active {background-color: red;} 
+        .menu {background-color:bisque; border: 2px solid grey;}
+    </style>
+</head>
+<body>
+    <h1> Меню </h1>
+    <div class="menu">
+        <a href="index.html" class="active">Главная</a>
+        <a href="contacts.html">Контакты и Формы</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="dom.html">Данные</a>
+        <a href="tasks.html">Задача</a>
+        <a href="#contacts-anchor">Якорь на контакты</a>
+        <a href="https://www.hse.ru" target="_blank">Внешний сайт (ВШЭ)</a>
+        <a href="https://www.hse.ru" target="_blank">
+            <img src="https://www.hse.ru/f/src/home/community.png" height="20px" alt="лого">
+        </a>
+    </div>
+
+    <h1>Студия горячей йоги и растяжки в Санкт-Петербурге</h1>
+    <p>Добро пожаловать! Мы помогаем обрести гибкость и спокойствие.</p>
+
+    <h3 id="top">Навигация внутри страницы</h3>
+    <ul>
+        <li><a href="#sec1">Раздел 1: О йоге</a></li>
+        <li><a href="#sec2">Раздел 2: О растяжке</a></li>
+        <li><a href="#sec3">Раздел 3: О нашей студии</a></li>
+        <li><a href="#contacts-anchor">Перейти к контактам</a></li>
+    </ul>
+
+    <h3 id="sec1">Раздел 1: Горячая йога</h3>
+    <p>Занятия проходят при температуре 35-40 градусов. Это помогает мышцам быстрее разогреваться.</p>
+
+    <h3 id="sec2">Раздел 2: Растяжка</h3>
+    <p>Улучшает кровообращение и снимает напряжение после рабочего дня.</p>
+
+    <hr>
+    <h3 id="sec3">Раздел 3: О нашей студии</h3>
+    
+    <h3>Преимущества</h3>
+    <ol>
+        <li>Опытные инструкторы</li>
+        <li>Уютные залы</li>
+    </ol>
+
+    <h3>Направления</h3>
+    <ul type="circle">
+        <li>Йога</li>
+        <li>Растяжка</li>
+    </ul>
+
+    <h3>Группы</h3>
+    <ul type="circle">
+        <li>Новички
+            <ul type="square">
+                <li>Утро</li>
+                <li>Вечер</li>
+            </ul>
+        </li>
+        <li>Профи
+            <ul type="square">
+                <li>Интенсив</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Наш зал</h3>
+    <img src="img/hall.JPG" alt="Зал йоги" title="Просторный светлый зал">
+    <p><i>Комментарий: Здесь царит атмосфера спокойствия.</i></p>
+    <p><a href="#top">К началу</a></p>
+
+
+    <hr>
+    <h3 id="contacts-anchor">Наши контакты</h3>
+    <p>Санкт-Петербург, ул. Пушкина, д. 10. Тел: +7 (999) 123-45-67</p>
+    <p><a href="#top">К началу</a></p>
+
+</body>
+</html>

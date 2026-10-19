@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты и Формы</title>
+    <style>
+        a:hover {background-color: yellow;}
+        a.active {background-color: red;} 
+        .menu {background-color:bisque; border: 2px solid grey;}
+    </style>
+</head>
+<body>
+
+ <h1> Меню </h1>
+    <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="contacts.html" class="active">Контакты и Формы</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="dom.html">Данные</a>
+        <a href="tasks.html">Задача</a>
+        <a href="index.html#contacts-anchor">Якорь на контакты</a>
+        <a href="https://www.hse.ru" target="_blank">Внешний сайт</a>
+        <a href="https://www.hse.ru" target="_blank"><img src="https://www.hse.ru/f/src/home/community.png" height="20px" alt="Лого"></a>
+    </div>
+    <h1>Контакты и запись</h1>
+    <table border="1" width="60%" background="img/background.png" >
+        <tr>
+            <th>День</th>
+            <th>Занятие</th>
+            <th>Фото</th>
+        </tr>
+        <tr>
+            <td>Пн</td>
+            <td><a href="index.html#sec1">Йога</a></td>
+            <td><img src="img/woman.JPG" width="100px"></td>
+        </tr>
+        <tr>
+            <td>Ср</td>
+            <td><a href="index.html#sec2">Растяжка</a></td>
+            <td>  <a href="img/stretching.JPG" width="600px" height="400px">
+                <img src="img/stretching.JPG" width="100px">
+            </a></td>
+        </tr>
+    </table>
+
+    <h3>Миниатюра (кликни, чтобы открыть большое фото)</h3>
+    <a href="big_img.html" target="_blank">
+        <img src="img/woman.JPG" width="100px">
+    </a>
+
+    <h3 align="left">Форма 1. Отправка личных данных</h3>
+    <form action="https://www.ya.ru" target="_blank">
+        
+        <p>Фамилия: <input type="text" name="last_name" size="20" value="Красильникова"></p>
+        <p>Имя: <input type="text" name="first_name" size="20" value="Полина"></p>
+        
+        <p>Группа: 
+            <select name="group">
+                <option value="four"> 4 </option>
+                <option value="five" selected> 5 </option>
+            </select>
+        </p>
+
+        <p>Мобильный телефон: <input type="tel" name="phone" size="20" value="+7(911)337-48-75"></p>
+        <p>Электронная почта: <input type="email" name="email" size="20" value="poivkrasilnikova@edu.hse.ru"></p>
+        
+     <p>
+            <input type="reset" name="reset" value="Обновить">
+            <input type="submit" name="submit" value="Отправить">
+        </p>
+    </form>
+
+
+   
+    <h3 align="left">Форма 2. Заказ абонемента</h3>
+    <form action="https://www.ya.ru" target="_blank">
+        
+        
+        <input type="hidden" name="function" value="page">
+        <input type="hidden" name="page_id" value="3">
+        <input type="hidden" name="form_type" value="subscription_order">
+
+        <p>Имя клиента: <input type="Text" name="client_name" size="20"></p>
+        
+        <p>Количество занятий: <input type="Number" name="sessions_count" size="5" min="1" max="50"></p>
+        
+        <p>Место проведения:<br>
+            <input type="Radio" name="place" value="Moscow">Москва
+            <input type="Radio" name="place" value="Nizhny">Нижний Новгород
+            <input type="Radio" name="place" value="Saint-Petersburg">Санкт-Петербург
+        </p>
+
+        <p>Тип абонемента:<br>
+            <input type="Radio" name="sub_type" value="yoga">Горячая йога
+            <input type="Radio" name="sub_type" value="stretching">Растяжка
+            <input type="Radio" name="sub_type" value="pilates">Пилатес
+        </p>
+        <p>Дата начала: <input type="date" name="start_date"></p>
+
+        <p>Промокод: <input type="password" name="promo"></p>
+
+        <p>Дополнительные услуги:<br>
+            <input type="Checkbox" name="extras" value="mat">Аренда коврика
+            <input type="Checkbox" name="extras" value="locker">Аренда шкафчика
+            <input type="Checkbox" name="extras" value="towel">Аренда полотенца
+        </p>
+        <p>
+            <input type="reset" name="reset" value="Обновить">
+            <input type="submit" name="submit" value="Отправить">
+        </p>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Паспорт</title>
+  <style type="text/css">
+   body { 
+    background-image: url(img/passpotr_shablon.png); 
+    background-position: 0px 110px; 
+    background-repeat: no-repeat;
+  }
+  .fio{
+    margin-left: 150px;
+    margin-top: 340px ;
+  }
+  .name{
+    margin-left: 150px;
+    margin-top: 20px ;
+  }
+  .data_b{
+    margin-left: 150px;
+    margin-top: 5px ;
+  }
+  .s_name{
+    margin-left: 150px;
+    margin-top: 10px ;
+  }
+  .img{
+    margin-left: 30px;
+    margin-top: -70px ;
+  }
+.btn{
+    margin-left: 30px;
+    margin-top: 70px ;
+  }
+  .menu {background-color:bisque; border: 2px solid grey;}
+    a:hover {background-color: yellow;}
+    a.active {background-color: red;}
+
+
+  </style>
+</head>
+<body>
+   <h1> Меню </h1>
+     <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="contacts.html">Контакты и Формы</a>
+        <a href="passport.html" class="active" >Паспорт</a>
+        <a href="dom.html">Данные</a>
+        <a href="tasks.html">Задача</a>
+        <a href="index.html#contacts-anchor">Якорь на контакты</a>
+        <a href="https://www.hse.ru" target="_blank">Внешний сайт</a>
+        <a href="https://www.hse.ru" target="_blank"><img src="https://www.hse.ru/f/src/home/community.png" height="20px" alt="Лого"></a>
+</div>
+
+<div class="fio">Иванов</div>
+
+<div class="name"> Иван </div>
+
+<div class="s_name"> Иванович </div>
+
+<div class="data_b"> Муж &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.07.2000 </div>
+<div class="img"> <img src="img/men.jpg" height="120" width="100"> </div>
+
+<button class ="btn" id="change"> Заменить </button>
+
+
+</body>
+<script src="js/change.js"></script>
+</html>
